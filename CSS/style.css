@@ -1,0 +1,29 @@
+body {
+    background-image: linear-gradient(to left, #23ABF2, #F69873);
+}
+.wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#img1:hover {
+    transform: scale(1.2, 1.2);
+    filter: blur(10px);
+    transition: 5s;
+}
+#img2:hover {
+    transform: scale(1.2, 1.2);
+    filter: grayscale(var(--value, 100%));
+    transition: 5s;
+}
+#img3 {
+    animation: infinite-rotate 5s both infinite;
+}
+@keyframes infinite-rotate {
+    from {
+        transform: rotateY(0);
+      }
+    
+      to {
+        transform: rotateY(180deg);
+      }
+    }
